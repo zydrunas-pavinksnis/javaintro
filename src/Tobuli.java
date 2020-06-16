@@ -5,7 +5,7 @@ public class Tobuli {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Max skaicius: ");
+        System.out.print("Ieskosime tobulu skaiciu intervale nuo 0 iki : ");
 
         int ikiKiek = scanner.nextInt();
 
@@ -27,6 +27,7 @@ public class Tobuli {
         }
 
         long stop = System.currentTimeMillis();
+        System.out.println();
         System.out.println("Uztruko " + (stop - start) + " ms");
 
     }

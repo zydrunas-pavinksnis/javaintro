@@ -3,6 +3,7 @@ package zydrunas.bit.java.p08;
 public class MinMaxDestytojo {
 
     public static void main(String[] args) {
+
         int [] m = {-1, 2, 0, 2, -1, 1};
 
         atspausdintiMasyva(m);
@@ -15,9 +16,11 @@ public class MinMaxDestytojo {
 
     }
 
+    /*
     static  void abc(int x) {
         x = 10;
     }
+    */
 
     static void atspausdintiMasyva (int[] a) {
         for (int e : a) { System.out.print(e + " ");}
@@ -49,7 +52,7 @@ public class MinMaxDestytojo {
         int rastasIndeksas = (masyvas.length - 1);
         int rastaReiksme = masyvas [(masyvas.length - 1)];
 
-        for (int i = 1; i < masyvas.length; i++) {
+        for (int i = (masyvas.length - 2); i >= 0; i--) {
             if (masyvas[i] < rastaReiksme) {
                 rastasIndeksas = i;
                 rastaReiksme = masyvas[i];
